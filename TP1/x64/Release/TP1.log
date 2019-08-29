@@ -1,0 +1,26 @@
+﻿  main.cpp
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(13,48): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(13,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(14,48): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(14,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(15,48): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(15,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(16,48): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(16,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(17,48): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(17,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(26,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(27,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(28,29): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\main.cpp(28,16): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+main.obj : error LNK2001: unresolved external symbol __imp_glutInit
+main.obj : error LNK2001: unresolved external symbol __imp_glutReshapeFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutKeyboardFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutCreateWindow
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitDisplayMode
+main.obj : error LNK2001: unresolved external symbol __imp_glutDisplayFunc
+main.obj : error LNK2001: unresolved external symbol __imp_glutMainLoop
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitWindowPosition
+main.obj : error LNK2001: unresolved external symbol __imp_glutInitWindowSize
+main.obj : error LNK2001: unresolved external symbol __imp_glutSwapBuffers
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\TP1\x64\Release\TP1.exe : fatal error LNK1120: 10 unresolved externals
