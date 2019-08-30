@@ -1,22 +1,17 @@
 ﻿  main.cpp
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(64,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(65,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(66,29): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(66,16): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(101,12): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(102,15): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(111,15): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(114,12): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(115,15): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(125,12): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(126,15): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(129,12): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(130,20): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(232,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(237,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(240,19): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(244,22): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(247,19): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(254,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(257,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(69,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(70,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(71,29): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(71,16): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(100,18): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(198,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(199,31): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(204,13): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(207,20): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(208,33): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(212,23): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(215,22): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(223,13): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(226,21): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\main.cpp(227,33): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
   T2.vcxproj -> C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\T2\Debug\T2.exe

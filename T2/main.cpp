@@ -95,44 +95,6 @@ GLvoid initGL()
 	glClearColor(RED, GREEN, BLUE, ALPHA);
 }
 
-void rotacion_tetera_a(int a,int posX, double tam)
-{
-	glPushMatrix();
-		glRotatef(a, 0, 0, 1);
-		glTranslatef(posX, 0, 0);
-		glutSolidTeapot(tam);
-	glPopMatrix();
-}
-
-void rotacion_tetera_b1(int b, int a, int posX, double tam)
-{
-	glPushMatrix();
-		create_circle(b, 0, 0.5);
-		glTranslatef(b, 0, 0);
-		glPushMatrix();
-
-		glRotatef(a, 0, 0, 1);
-			glTranslatef(posX, 0, 0);
-			glutSolidTeapot(tam);
-		glPopMatrix();
-
-	glPopMatrix();
-}
-
-void rotacion_tetera_torus(int a, int posX, double tam)
-{
-	glPushMatrix();
-		glRotatef(a, 0, 0, 1);
-		glTranslatef(posX, 0, 0);
-		glutSolidTeapot(tam);
-		glPushMatrix();
-			glRotatef(a, 0, 1, 0);
-			glTranslatef(posX - 2, 0, 0);
-			glutSolidTorus(0.5, 1.5, 10, 10);
-		glPopMatrix();
-	glPopMatrix();
-}
-
 float aglob = 0.0;
 float bglob = -10.0;
 float sum = 0.009;
@@ -141,53 +103,6 @@ double tierravel = 0.0;
 double solvel = 0.0;
 double velocidad_tierra_alrededor_sol = 0.05;
 double velocidad_sol_sobre_sol = 0.07;
-
-void dibujaRectangulo(float ancho, float largo)
-{
-	glBegin(GL_QUADS);
-	glVertex2f(0, -largo / 2.0f);
-	glVertex2f(ancho, -largo / 2.0f);
-	glVertex2f(ancho, largo / 2.0f);
-	glVertex2f(0, largo / 2.0f);
-	glEnd();
-}
-
-void dibujar_grua(double angulo1, double angulo2, double largo)
-{
-	glPushMatrix();
-	glColor3f(0.929, 0.392, 0.027);
-	glTranslatef(-2, -1, 0);
-	dibujaRectangulo(4, 2);//base
-	glPopMatrix();
-
-	glPushMatrix();
-		glColor3f(0.858, 0.929, 0.027);
-		glRotatef(angulo1, 0, 0, 1);
-		dibujaRectangulo(6, 1.77);//brazo1
-		glPushMatrix();
-			glTranslatef(6, 0, 0);
-			glColor3f(0.858, 0.929, 0.027);
-			glRotatef(-angulo2, 0, 0, 1);
-			dibujaRectangulo(4, 1.25);//brazo2
-			glPushMatrix();
-				glTranslatef(4, 0, 0);
-				glColor3f(1, 1, 1);
-				glRotatef(-90-(angulo1)+(angulo2), 0, 0, 1);
-				dibujaRectangulo(largo, 0.2);//brazo2
-				glPushMatrix();
-					glColor3f(1, 0, 0);
-					glTranslatef(largo, 0, 0);
-					dibujaRectangulo(0.5, 0.5);//cubo
-				glPopMatrix();
-			glPopMatrix();
-		glPopMatrix();
-	glPopMatrix();
-
-}
-
-double angle1 = 0;
-double angle2 = 0;
-double largo = 0.001;
 
 GLvoid window_display()
 {
@@ -278,26 +193,26 @@ GLvoid window_display()
 	//////////////////////////////
 	
 	//////////////sistema solar /////////////////
-	/*
+	
 	glPushMatrix();
-	glRotatef(solvel, 0, 0, 1);
+	glRotatef(solvel, 0, 0, 1);//velocidad de rotacion
 	glColor3f(0.815, 0.905, 0.113);
 	glutSolidSphere(4, 8, 8);//sol
 	glPopMatrix();
 
 	glPushMatrix();
-		glRotatef(tierravel, 0, 0, 1);
+		glRotatef(tierravel, 0, 0, 1);//velocidad alrededor del sol
 		glTranslatef(10, 0, 0);
 		glPushMatrix();
-			glRotatef(solvel*3, 0, 0, 1);
+			glRotatef(solvel*3, 0, 0, 1);//velocidad de rotacion
 			glColor3f(0.047, 0.192, 0.027);
 			glutSolidSphere(2, 8, 8);//tierra
 		glPopMatrix();
 		glPushMatrix();
-			glRotatef(tierravel*2, 0, 0, 1);
+			glRotatef(tierravel*2, 0, 0, 1);//velocidad alrededor de la tierra
 			glTranslatef(4, 0, 0);
 			glPushMatrix();
-				glRotatef(solvel * 1.5, 0, 0, 1);
+				glRotatef(solvel * 1.5, 0, 0, 1);//velocidad de rotacion
 				glColor3f(1, 1, 1);
 				glutSolidSphere(1, 8, 8);//luna
 			glPopMatrix();
@@ -305,10 +220,10 @@ GLvoid window_display()
 	glPopMatrix();
 
 	glPushMatrix();
-		glRotatef(tierravel, 0, 0, 1);
+		glRotatef(tierravel-0.01, 0, 0, 1);//velocidad alrededor del sol
 		glTranslatef(18, 0, 0);
 		glPushMatrix();
-			glRotatef(solvel, 0, 0, 1);
+			glRotatef(solvel, 0, 0, 1);//velocidad de rotacion
 			glColor3f(0.862, 0.454, 0.035);
 			glutSolidSphere(3, 8, 8);//marte
 		glPopMatrix();
@@ -316,11 +231,7 @@ GLvoid window_display()
 
 	solvel = solvel + velocidad_sol_sobre_sol;
 	tierravel = tierravel + velocidad_tierra_alrededor_sol;
-	*/
-
-	/////////////La grua////////////////
 	
-	dibujar_grua(angle1, angle2, largo);
 
 	
 	glutSwapBuffers();
@@ -345,51 +256,19 @@ void init_scene()
 
 GLvoid window_key(unsigned char key, int x, int y)
 {
-	/*
-	#define KEY_ESC 27
-	#define KEY_UP 87		//W
-	#define KEY_DOWN 83		//S
-	#define KEY_LEFT 65		//A
-	#define KEY_RIGHT 68	//D
-	#define KEY_PLUS 79		//O
-	#define KEY_REST 80		//P
-	*/
+
 	switch (key) {
 		case ECHAP:
 			exit(1);
 			break;
-		case KEY_LEFT:
-			angle1 = angle1 + 5;
-			break;
-		case KEY_RIGHT:
-			angle1 = angle1 - 5;
-			break;
-		case KEY_UP:
-			angle2 = angle2 - 5;
-			break;
-		case KEY_DOWN:
-			angle2 = angle2 + 5;
-			break;
-		case KEY_PLUS:
-			largo = largo + 1;
-			break;
-		case KEY_REST:
-			largo = largo - 1;
-			break;
-
 		default:
 			printf("La touche %d non active.\n", key);
 			break;
 	}
 }
 
-
 //function called on each frame
 GLvoid window_idle()
 {
-
-
 	glutPostRedisplay();
 }
-
-//*/

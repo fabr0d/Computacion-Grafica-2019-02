@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(68,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(69,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(70,29): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(70,16): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(110,31): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(116,31): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(117,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(118,26): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(121,31): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(122,12): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(127,27): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(128,29): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(128,19): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\main.cpp(131,15): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  Grua01.vcxproj -> C:\Users\Fabrizio\Documents\GitHub\Computacion-Grafica-2019-02\Grua01\Debug\Grua01.exe
