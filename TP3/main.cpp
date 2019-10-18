@@ -38,6 +38,8 @@ GLvoid window_reshape(GLsizei width, GLsizei height);
 GLvoid window_key(unsigned char key, int x, int y);
 
 float zmove = -30;
+float xmove = 0;
+float ymove = 0;
 
 ///////////////////////
 int wi = 800;
@@ -128,6 +130,17 @@ void OnMouseMotion(int x, int y)
 	my = y;
 	ax += dx * speed;
 	ay += dy * speed;
+}
+
+void OnMouseMotionPassive(int x, int y)
+{
+	cout << "x: " << x << " , y: " << y << endl;
+	int dx = mx - x;
+	int dy = my - y;
+	mx = x;
+	my = y;
+	ax += dx * speed * 2;
+	ay += dy * speed * 2;
 }
 
 //function called on each frame
@@ -277,15 +290,16 @@ GLvoid window_display()
 	//1 - END
 
 	//2 - BEGIN
-
+	///*
 	gluPerspective(45.0, 1.0, 1.0, 100.0);
 	glTranslatef(0, 0, zmove);
-
+	glTranslatef(0, ymove, 0);
+	glTranslatef(xmove, 0, 0);
 	glRotatef(ax, 0, 1, 0);
 	glRotatef(ay, 1, 0, 0);
 	sistemasolar();
 	displayGizmo();
-
+	//*/
 	//2 - END
 
 	//3-BEGIN
@@ -329,6 +343,21 @@ GLvoid window_key(unsigned char key, int x, int y)
 	case KEY_ZLESS:
 		zmove = zmove - 1.5;
 		break;
+		//#define KEY_UP 87		//W
+		//#define KEY_DOWN 83	//S
+		//#define KEY_LEFT 65	//A
+		//#define KEY_RIGHT 68	//D
+	case KEY_UP:
+		ymove = ymove + 1.5;
+		break;
+	case KEY_DOWN:
+		ymove = ymove - 1.5;
+		break;
+	case KEY_LEFT:
+		xmove = xmove + 1.5;
+		break;
+	case KEY_RIGHT:
+		xmove = xmove - 1.5;
 	default:
 		printf(" %d non active.\n", key);
 		break;
@@ -356,6 +385,7 @@ int main(int argc, char** argv)
 
 	glutKeyboardFunc(&window_key);
 	glutMouseFunc(&OnMouseClick);
+	//glutPassiveMotionFunc(&OnMouseMotionPassive); //4
 	glutMotionFunc(&OnMouseMotion);
 	//function called on each frame
 	glutIdleFunc(&window_idle);
