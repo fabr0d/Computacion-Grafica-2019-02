@@ -53,18 +53,64 @@ float ay = 0.0;
 float speed = 0.1;
 //////////////////////
 
+double double_rand(double fMin, double fMax)
+{
+	double f = (double)rand() / RAND_MAX;
+	return fMin + f * (fMax - fMin);
+}
+
 //Particle Motor
+
+GLuint glInitTexture(char* filename)
+{
+	GLuint t = 0;
+
+	glGenTextures(1, &t);
+	glBindTexture(GL_TEXTURE_2D, t);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	unsigned char data[] = { 255, 0, 0, 255 };
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1, 1, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+	return t;
+}
+
+void drawImage(GLuint file, float x, float y, float w, float h, float angle)
+{
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glPushMatrix();
+	glTranslatef(x, y, 0.0);
+	glRotatef(angle, 0.0, 0.0, 1.0);
+
+	glBindTexture(GL_TEXTURE_2D, file);
+	glEnable(GL_TEXTURE_2D);
+
+	glBegin(GL_QUADS);
+	glTexCoord2f(0.0, 0.0); glVertex3f(x, y, 0.0f);
+	glTexCoord2f(0.0, 2.0); glVertex3f(x, y + h, 0.0f);
+	glTexCoord2f(2.0, 2.0); glVertex3f(x + w, y + h, 0.0f);
+	glTexCoord2f(2.0, 0.0); glVertex3f(x + w, y, 0.0f);
+	glEnd();
+
+	glPopMatrix();
+}
+
+GLuint texture;
+
+float gravity = 9.81;
 
 class Spark
 {
 public:
-	float velX = 0;
-	float velY = 0;
-	float velZ = 0;
-	float posX;
-	float posY;
-	float posZ;
+	double vox = 0.0;
+	double voy = 0.0;
+	double voz = 0.0;
+	double posX;
+	double posY;
+	double posZ;
 	int lifetime = 0;
+	int cont = 0;
+	double angle = 0.0;
+	
 	Spark(float _posX, float _posY, float _posZ);
 
 	void drawParticle()
@@ -74,17 +120,17 @@ public:
 			//cout << "entra aca?" << endl;
 			glPushMatrix();
 			glTranslated(posX, posY, posZ);
-			int Rtemp, Gtemp, Btemp;
-			Rtemp = rand() % 250+2;
-			Gtemp = rand() % 250+2;
-			Btemp = rand() % 250+2;
-			glColor3d(Rtemp, Gtemp, Btemp);
+			
+			glColor3d(255, 255, 0);
 			glutSolidSphere(0.25, 15, 15);
 			glPopMatrix();
-			posX = posX + velX;
-			posY = posY + velY;
-			posZ = posZ + velZ;
+
+			posX = posX + (vox * (cos(angle * PI / 180)) * cont);
+			posY = posY + (voy * (sin(angle * PI / 180)) * cont - (0.5) * gravity * (pow(cont, 2.0)));
+			posZ = posZ + voz;
+
 			lifetime--;
+			cont++;
 		}
 	}
 };
@@ -94,26 +140,16 @@ Spark::Spark(float _posX, float _posY, float _posZ)
 	posX = _posX;
 	posY = _posY;
 	posZ = _posZ;
-	//srand(time(NULL));
 
-	velX = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	velX = velX / 50;
-	if (rand() % 2 == 0)
-	{
-		velX = velX * -1;
-	}
-	velY = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	velY = velY / 50;
-	if (rand() % 2 == 0)
-	{
-		velY = velY * -1;
-	}
-	velZ = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	velZ = velZ / 50;
-	if (rand() % 2 == 0)
-	{
-		velZ = velZ * -1;
-	}
+	angle = double_rand(25.0, 50.0);
+
+	vox = double_rand(0.01,0.99);
+	voy = vox;
+	voz = vox;
+	if (rand() % 2 == 0){ vox = vox * -1; }
+	if (rand() % 2 == 0){ voy = voy * -1; }
+	if (rand() % 2 == 0){ voz = voz * -1; }
+
 	lifetime = rand() % 500;
 }
 
@@ -152,7 +188,7 @@ void drawparticles()
 			if (particlesChecker(world[i]) == true)
 			{
 				world.erase(world.begin() + i);
-				cout << "murio una explosion" << endl;
+				//cout << "murio una explosion" << endl;
 				int tempx = rand() % 10 + 1;
 				if (rand() % 2 == 0)
 				{
@@ -264,13 +300,21 @@ GLvoid initGL()
 	glLoadIdentity();
 }
 
-
+int timetemp = 0;
 
 GLvoid window_display()
 {
 	time_ = glutGet(GLUT_ELAPSED_TIME); // recupera el tiempo ,que paso desde el incio de programa
 	float dt = float(time_ - timebase) / 1000.0;// delta time
 	timebase = time_;
+
+	//cout << "timetemp: " << timetemp << endl;
+	//timetemp++;
+
+	const double w = glutGet(GLUT_WINDOW_WIDTH);
+	const double h = glutGet(GLUT_WINDOW_HEIGHT);
+
+	drawImage(texture, 0.0f, 0.0f, 4.0f, 4.0f, 0.0);
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
@@ -283,6 +327,7 @@ GLvoid window_display()
 	glRotatef(ay, 1, 0, 0);
 	displayGizmo();
 	
+
 
 	drawparticles();
 
@@ -357,6 +402,12 @@ int main(int argc, char** argv)
 	init_scene();
 
 	glutDisplayFunc(&window_display);	// Dentro de esa funcion se dibujan las cosas
+
+	string str= "spark.png";
+	char* sparkname = new char[str.length() + 1];
+	strcpy(sparkname, str.c_str());
+
+	texture = glInitTexture(sparkname);
 
 	glutReshapeFunc(&window_reshape);
 

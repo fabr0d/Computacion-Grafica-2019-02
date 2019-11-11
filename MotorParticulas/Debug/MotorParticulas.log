@@ -1,16 +1,17 @@
 ﻿  main.cpp
 C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(53,18): warning C4305:  'initializing': truncation from 'double' to 'float'
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(124,20): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(148,20): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(150,21): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(171,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(171,25): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(171,18): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(272,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(318,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(321,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(328,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(331,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(334,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(337,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(99,21): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(160,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(184,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(186,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(207,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(207,25): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(207,18): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(308,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(363,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(366,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(373,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(376,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(379,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\main.cpp(382,17): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
   MotorParticulas.vcxproj -> C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\MotorParticulas\Debug\MotorParticulas.exe
