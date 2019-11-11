@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(113,13): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(114,13): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(126,12): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(127,12): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(266,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(268,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(288,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(290,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(299,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(301,25): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(308,24): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(310,25): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(317,36): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\main.cpp(328,37): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+  TP4.vcxproj -> C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\Debug\TP4.exe
