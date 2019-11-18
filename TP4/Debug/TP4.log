@@ -1,1 +1,1 @@
-﻿  TP4.vcxproj -> C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\TP4\Debug\TP4.exe
+﻿LINK : fatal error LNK1104: cannot open file 'FreeImage.lib'

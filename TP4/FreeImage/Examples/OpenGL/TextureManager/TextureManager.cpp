@@ -1,11 +1,3 @@
-//**********************************************
-//Singleton Texture Manager class
-//Written by Ben English
-//benjamin.english@oit.edu
-//
-//For use with OpenGL and the FreeImage library
-//**********************************************
-
 #include "TextureManager.h"
 
 TextureManager* TextureManager::m_inst(0);
@@ -26,10 +18,7 @@ TextureManager::TextureManager()
 	#endif
 }
 
-//these should never be called
-//TextureManager::TextureManager(const TextureManager& tm){}
-//TextureManager& TextureManager::operator=(const TextureManager& tm){}
-	
+
 TextureManager::~TextureManager()
 {
 	// call this ONLY when linking with FreeImage as a static library

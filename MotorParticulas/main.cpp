@@ -110,6 +110,8 @@ public:
 	int lifetime = 0;
 	int cont = 0;
 	double angle = 0.0;
+	double masa = 5.0;
+	int lifetimetotal;
 	
 	Spark(float _posX, float _posY, float _posZ);
 
@@ -120,7 +122,8 @@ public:
 			//cout << "entra aca?" << endl;
 			glPushMatrix();
 			glTranslated(posX, posY, posZ);
-			
+			double posXTemp;
+			double posZTemp;
 			glColor3d(255, 255, 0);
 			glutSolidSphere(0.25, 15, 15);
 			glPopMatrix();
@@ -151,6 +154,7 @@ Spark::Spark(float _posX, float _posY, float _posZ)
 	if (rand() % 2 == 0){ voz = voz * -1; }
 
 	lifetime = rand() % 500;
+	lifetimetotal = lifetime;
 }
 
 vector<vector<Spark>> world;

@@ -139,15 +139,8 @@
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FreeImage.h" />
     <ClInclude Include="FreeImage\Dist\FreeImage.h" />
     <ClInclude Include="TextureManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeImage.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="FreeImage.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
