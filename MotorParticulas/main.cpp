@@ -96,25 +96,32 @@ void drawImage(GLuint file, float x, float y, float w, float h, float angle)
 
 GLuint texture;
 
-float gravity = 9.81;
-
 class Spark
 {
 public:
-	double vox = 0.0;
-	double voy = 0.0;
-	double voz = 0.0;
+	double velX = 0.0;
+	double velY = 0.0;
+	double velZ= 0.0;
 
 	double posX;
 	double posY;
 	double posZ;
+
+	double oldposX;
+	double oldposY;
+	double oldposZ;
+
+	double oldvelX;
+	double oldvelY;
+	double oldvelZ;
 	
 	int lifetime;
-	int cont = 0;
+	double lifetimetotal;
 
-	double masa = 0.1;
+	double masa = 0.5;
 	
-	int lifetimetotal;
+	double forceX = 0;
+	double forceY = -0.98;
 	
 	Spark(float _posX, float _posY, float _posZ);
 
@@ -122,23 +129,34 @@ public:
 	{
 		if (lifetime > 0)
 		{
-			//cout << "entra aca?" << endl;
 			glPushMatrix();
 			glTranslated(posX, posY, posZ);
-			double posXTemp;
-			double posZTemp;
-			glColor3d(255, 255, 0);
-			glutSolidSphere(1, 15, 15);
+				glColor3d(255, 255, 0);
+				glutSolidSphere(1, 15, 15);
 			glPopMatrix();
 
-			lifetime--;
-			lifetimetotal++;
+			lifetime--; //tiempo de vida que se reduce
+			lifetimetotal = lifetimetotal + 1; //tiempo transcurrido
 
-			posX = posX + vox;
-			posY = posY - (voy)-0.000098/masa;
-			posZ = posZ + voz;
-			cout << "posX: " << posX << " posy: " << posY << " posz: " << posZ << endl;
-			cont++;
+			oldposX = posX;
+			oldposY = posY;
+			oldposZ = posZ;
+
+			oldvelX = velX;
+			oldvelY = velY;
+			oldvelZ = velZ;
+
+			double acelerationX = forceX / masa;
+			double acelerationY = forceY / masa;
+
+			//velX = oldvelX + lifetimetotal + acelerationX;
+			velY = oldvelY + lifetimetotal + acelerationY;
+
+			posX = oldposX + lifetimetotal *velX;
+			posY = oldposY + lifetimetotal *velY;
+			posZ = oldposZ + lifetimetotal *velZ;
+
+			cout << "velX: " << velX << " velY: " << velY << " velZ: " << velZ << endl;
 		}
 	}
 };
@@ -149,17 +167,16 @@ Spark::Spark(float _posX, float _posY, float _posZ)
 	posY = _posY;
 	posZ = _posZ;
 
-	//angle = double_rand(25.0, 50.0);
+	velX = (rand() % 5 + 1);
+	velY = (rand() % 5 + 1);
+	velZ = (rand() % 5 + 1);
 
-	vox = double_rand(0.0001, 0.0099);
-	voy = double_rand(0.0001, 0.0099);
-	voz = double_rand(0.0001, 0.0099);
-	if (rand() % 2 == 0){ vox = vox * -1; }
-	if (rand() % 2 == 0){ voy = voy * -1; }
-	if (rand() % 2 == 0){ voz = voz * -1; }
+	if (rand() % 10 == 0){ velX = velX * -1; }
+	if (rand() % 10 == 0){ velY = velY * -1; }
+	if (rand() % 10 == 0){ velZ = velZ * -1; }
 
-	lifetime = rand() % 5000;
-	lifetimetotal = lifetime;
+	lifetime = rand() % 25;
+	lifetimetotal = 0;
 }
 
 vector<vector<Spark>> world;
@@ -179,7 +196,7 @@ bool particlesChecker(vector<Spark> temp)
 void genparticles(float initx, float inity, float initz)
 {
 	vector<Spark> particles;
-	int x = 1/*rand() % 20 + 10*/; //NUMERO DE PARTICULAS
+	int x = 20; //NUMERO DE PARTICULAS
 	for (int i = 0; i < x; i++)
 	{
 		Spark temporal(initx, inity, initz);
@@ -190,10 +207,12 @@ void genparticles(float initx, float inity, float initz)
 
 void drawparticles()
 {
+	
 	for (int i = 0; i < world.size(); i++)
 	{
 		for (int j = 0; j < world[i].size(); j++)
 		{
+			//cout << world[i].size() << endl;
 			if (particlesChecker(world[i]) == true)
 			{
 				world.erase(world.begin() + i);
@@ -213,7 +232,7 @@ void drawparticles()
 				{
 					tempz = tempz * -1;
 				}
-				genparticles(0, 0, 0);
+				genparticles(tempx, tempy, tempz);
 			}
 			else
 			{
@@ -411,13 +430,7 @@ int main(int argc, char** argv)
 	init_scene();
 
 	glutDisplayFunc(&window_display);	// Dentro de esa funcion se dibujan las cosas
-	/*
-	string str= "spark.png";
-	char* sparkname = new char[str.length() + 1];
-	strcpy(sparkname, str.c_str());
 
-	texture = glInitTexture(sparkname);
-	*/
 	glutReshapeFunc(&window_reshape);
 
 	glutKeyboardFunc(&window_key);

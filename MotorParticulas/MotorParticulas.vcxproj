@@ -76,12 +76,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -91,12 +91,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -108,14 +108,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -127,14 +127,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\include;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\fabro\OneDrive\Documentos\GitHub\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\glew-1.11.0\lib;C:\Users\Fab\Documents\GitHub\Computacion-Grafica-2019-02\Computacion-Grafica-2019-02\OpenGL\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
