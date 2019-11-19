@@ -104,13 +104,16 @@ public:
 	double vox = 0.0;
 	double voy = 0.0;
 	double voz = 0.0;
+
 	double posX;
 	double posY;
 	double posZ;
-	int lifetime = 0;
+	
+	int lifetime;
 	int cont = 0;
-	double angle = 0.0;
-	double masa = 5.0;
+
+	double masa = 0.1;
+	
 	int lifetimetotal;
 	
 	Spark(float _posX, float _posY, float _posZ);
@@ -125,14 +128,16 @@ public:
 			double posXTemp;
 			double posZTemp;
 			glColor3d(255, 255, 0);
-			glutSolidSphere(0.25, 15, 15);
+			glutSolidSphere(1, 15, 15);
 			glPopMatrix();
 
-			posX = posX + (vox * (cos(angle * PI / 180)) * cont);
-			posY = posY + (voy * (sin(angle * PI / 180)) * cont - (0.5) * gravity * (pow(cont, 2.0)));
-			posZ = posZ + voz;
-
 			lifetime--;
+			lifetimetotal++;
+
+			posX = posX + vox;
+			posY = posY - (voy)-0.000098/masa;
+			posZ = posZ + voz;
+			cout << "posX: " << posX << " posy: " << posY << " posz: " << posZ << endl;
 			cont++;
 		}
 	}
@@ -144,16 +149,16 @@ Spark::Spark(float _posX, float _posY, float _posZ)
 	posY = _posY;
 	posZ = _posZ;
 
-	angle = double_rand(25.0, 50.0);
+	//angle = double_rand(25.0, 50.0);
 
-	vox = double_rand(0.01,0.99);
-	voy = vox;
-	voz = vox;
+	vox = double_rand(0.0001, 0.0099);
+	voy = double_rand(0.0001, 0.0099);
+	voz = double_rand(0.0001, 0.0099);
 	if (rand() % 2 == 0){ vox = vox * -1; }
 	if (rand() % 2 == 0){ voy = voy * -1; }
 	if (rand() % 2 == 0){ voz = voz * -1; }
 
-	lifetime = rand() % 500;
+	lifetime = rand() % 5000;
 	lifetimetotal = lifetime;
 }
 
@@ -174,7 +179,7 @@ bool particlesChecker(vector<Spark> temp)
 void genparticles(float initx, float inity, float initz)
 {
 	vector<Spark> particles;
-	int x = rand() % 20 + 10; //NUMERO DE PARTICULAS
+	int x = 1/*rand() % 20 + 10*/; //NUMERO DE PARTICULAS
 	for (int i = 0; i < x; i++)
 	{
 		Spark temporal(initx, inity, initz);
@@ -208,7 +213,7 @@ void drawparticles()
 				{
 					tempz = tempz * -1;
 				}
-				genparticles(tempx, tempy, tempz);
+				genparticles(0, 0, 0);
 			}
 			else
 			{
@@ -406,13 +411,13 @@ int main(int argc, char** argv)
 	init_scene();
 
 	glutDisplayFunc(&window_display);	// Dentro de esa funcion se dibujan las cosas
-
+	/*
 	string str= "spark.png";
 	char* sparkname = new char[str.length() + 1];
 	strcpy(sparkname, str.c_str());
 
 	texture = glInitTexture(sparkname);
-
+	*/
 	glutReshapeFunc(&window_reshape);
 
 	glutKeyboardFunc(&window_key);
