@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1576090485 source:c:\users\fab\desktop\xd\mio\laricamesh\main.cpp
+	<windows.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<GL/glut.h>
+	<GL/glext.h>
+	"TextureManager.h"
+
+976692172 c:\users\fab\desktop\xd\opengl\glut\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1548251886 c:\users\fab\desktop\xd\mio\laricamesh\texturemanager.h
+	<windows.h>
+	<GL/glut.h>
+	<FreeImage.h>
+	<map>
+
+1573848335 c:\users\fab\desktop\xd\mio\laricamesh\terrain.hpp
+	<windows.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<GL/glut.h>
+
+1548438854 source:c:\users\fab\desktop\xd\mio\laricamesh\terrain.cpp
+	<windows.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<GL/glut.h>
+	"terrain.hpp"
+
+1411098642 source:c:\users\fab\desktop\xd\mio\laricamesh\texturemanager.cpp
+	"TextureManager.h"
+
